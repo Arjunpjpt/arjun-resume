@@ -11,12 +11,14 @@ min-height: 100vh;
 height: auto;
 width: 30%;
 float: left;
+overflow-x:scroll;
 }
 .profileRight{
     /* background-color: blue; */
     height: 100vh;
     width: 70%;
     float:right;
+    overflow-x:scroll;
 }
 .colorwhite{
     color: white;
