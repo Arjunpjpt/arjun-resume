@@ -14,6 +14,7 @@ callbackFunction=(childData)=>{
     this.setState({msg:childData})
 }
   render() {
+    
     return (
         <div>
             <div className="Header">
@@ -24,6 +25,7 @@ callbackFunction=(childData)=>{
 
           <Switch>
               <Route exact path="/" component={Home} />
+              <Route exact path="/arjun-resume" component={Home} />
               <Route path="/message"  component={Message}></Route>
           </Switch>
          

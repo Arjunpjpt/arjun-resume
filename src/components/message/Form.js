@@ -9,7 +9,7 @@ const useStyles = makeStyles(theme => ({
   root: {
     "& .MuiTextField-root": {
       margin: theme.spacing(1),
-      width: 600
+      width: 550
     }
   },
   paper: {
@@ -26,11 +26,18 @@ export default function Form() {
   const handleChange = event => {
     setValue(event.target.value);
   };
+  const onSubmit =(e) => {
+    alert("Message Sent! ");
+    document.getElementById("email").value = "";
+    document.getElementById("outlined-multiline-static").value = "";
+    document.getElementById("fullname").value = "";
+
+  }
 
   return (
       <div>
-<Grid container spacing={12}>
-        <Grid item xs={12}>
+<Grid >
+        <Grid >
           <Paper className={classes.paper}>
           <form className={classes.root} noValidate autoComplete="off">
       <div>
@@ -75,7 +82,7 @@ export default function Form() {
             </tr>
             <tr>
                 <td>
-                <Button variant="contained" color="primary">
+                <Button variant="contained" color="primary" onClick={onSubmit}>
         Send
       </Button>
                 </td>

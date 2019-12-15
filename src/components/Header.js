@@ -124,9 +124,10 @@ export default function Header() {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap>
-            My Profile
-          </Typography>
+          
+            <i id="titleName">
+            My Profile</i>
+         
         </Toolbar>
       </AppBar>
       <Drawer
@@ -142,6 +143,7 @@ export default function Header() {
           }),
         }}
       >
+        {/* {document.getElementById("titleName").innerHTML = ""} */}
         <div className={classes.toolbar}>
           <IconButton onClick={handleDrawerClose}>
             {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
@@ -154,7 +156,7 @@ export default function Header() {
 
             <Link to="/" >
         <ListItem button key={"Profile"} onClick={handleClick("Profile")}>
-              <ListItemIcon>{<AccountBoxIcon /> }</ListItemIcon>
+              <ListItemIcon>{<AccountBoxIcon color="primary"/> }</ListItemIcon>
               
               <ListItemText primary={"Profile"} />
             </ListItem>
@@ -165,7 +167,7 @@ export default function Header() {
            
             <Link to="/message" >
             <ListItem button key={"Message"} onClick={handleClick("Message")}>
-              <ListItemIcon>{<MessageIcon /> }</ListItemIcon>
+              <ListItemIcon>{<MessageIcon color="primary"/> }</ListItemIcon>
               <ListItemText primary={"Message"} />
             </ListItem>
             </Link>

@@ -53,11 +53,11 @@ export default function Home() {
             <div className="profileLeft">
             <List className={classes.root}>
       <ListItem alignItems="flex-start">
-        <ListItemAvatar>
-          <Avatar alt="Arjun" src="/static/images/avatar/1.jpg" />
-        </ListItemAvatar>
+        {/* <ListItemAvatar> */}
+          {/* <Avatar alt="Arjun" src="/static/images/avatar/1.jpg" /> */}
+        {/* </ListItemAvatar> */}
         <ListItemText
-          primary="Arjun Prajapati"
+          primary={<b>Arjun Prajapati</b>}
           secondary={
             <React.Fragment>
               <Typography
@@ -67,10 +67,26 @@ export default function Home() {
                 color="textPrimary"
               >
                   <span className="colorwhite">
-                <EmailIcon/>arjunpjpt@gmail.com <br/>
-                <PhoneIcon/> 2066310910<br/>
-                <LinkedInIcon/>linkedin.com/in/arjun-prajapati<br/>
-                <GitHubIcon/>github.com/Arjunpjpt
+                    <table>
+                      <tr>
+                        <td> <EmailIcon/></td>
+                        <td> arjunpjpt@gmail.com </td>
+                      </tr>
+                      <tr>
+                        <td> <PhoneIcon/> </td>
+                        <td>2066310910 </td>
+                      </tr>
+                      <tr>
+                        <td> <LinkedInIcon/></td>
+                        <td>linkedin.com/in/arjun-prajapati </td>
+                      </tr>
+                      <tr>
+                        <td> <GitHubIcon/></td>
+                        <td> github.com/Arjunpjpt</td>
+                      </tr>
+                    </table>
+                
+                
                 </span>
               </Typography>
               
@@ -163,7 +179,7 @@ Applied Mathematics(minor)
       <ListItem>
         <ListItemAvatar>
           <Avatar>
-            <WorkIcon />
+            <WorkIcon  />
           </Avatar>
         </ListItemAvatar>
         

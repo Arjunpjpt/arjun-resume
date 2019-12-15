@@ -1,6 +1,8 @@
 .messageComponent{
     display: flex;
     margin-top: 40px;
+    /* width: 100px; */
+    /* min-width: 400px; */
   align-items: center;
   justify-content: center;
   
